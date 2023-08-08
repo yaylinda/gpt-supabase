@@ -1,6 +1,6 @@
 # Supabase
-.branches
-.temp
+supabase/.branches
+supabase/.temp
 
 .DS_Store
 
