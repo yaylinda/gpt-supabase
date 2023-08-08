@@ -1,0 +1,7 @@
+{
+  "imports": {
+    "openai": "https://deno.land/x/openai@1.4.2/mod.ts",
+    "@supabase/supabase-js": "https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm",
+    "moment": "https://deno.land/x/momentjs@2.29.1-deno/mod.ts"
+  }
+}
