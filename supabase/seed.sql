@@ -13,3 +13,6 @@ alter publication supabase_realtime add table public.chat_messages;
 alter publication supabase_realtime add table public.friends;
 alter publication supabase_realtime add table public.profiles;
 alter publication supabase_realtime add table public.purchases;
+alter publication supabase_realtime add table public.games;
+alter publication supabase_realtime add table public.game_actions;
+alter publication supabase_realtime add table public.game_participants;

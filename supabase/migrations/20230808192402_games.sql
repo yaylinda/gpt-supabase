@@ -5,6 +5,8 @@ create table if not exists public.games (
     type text not null,
     status text not null,
     participants uuid[] not null default array[]::uuid[],
+    name text not null,
+    is_multiplayer bool not null default false,
     constraint games_pkey primary key (id),
     constraint games_created_by_fkey foreign key (created_by) references profiles (id) on delete cascade
 );

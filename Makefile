@@ -34,7 +34,7 @@ reset:
 	npx supabase db reset
 
 gen:
-	npx supabase gen types typescript --local --schema public > ../app/src/gen.ts && npx supabase gen types typescript --local --schema public > functions/gen.ts
+	npx supabase gen types typescript --local --schema public > $(path)
 
 new_function:
 	npx supabase functions new $(name)
