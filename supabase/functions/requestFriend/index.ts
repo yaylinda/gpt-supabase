@@ -35,7 +35,7 @@ serve(async (req) => {
 
     if (requesteeError || !requesteeProfile) {
         return successResponse<RequestFriendResponse>(
-            {success: false, message: `Oops! That user doesn't exist!`},
+            {success: false, message: `Oops! That user doesn't exist.`},
             request.correlationId
         );
     }
@@ -80,5 +80,5 @@ serve(async (req) => {
     // Yay! Friend request row got inserted!
     //
 
-    return successResponse({success: true, message: ''}, request.correlationId);
+    return successResponse({success: true, message: `Successfully sent a friend request to ${request.requesteeUsernameDiscriminator}!`}, request.correlationId);
 });
