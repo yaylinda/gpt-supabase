@@ -16,7 +16,7 @@ new_migration:
 	npx supabase migration new $(name)
 
 apply:
-	npx supabase migration up && npx supabase db push && make gen
+	npx supabase migration up
 
 list:
 	npx supabase migration list

@@ -3,7 +3,6 @@ CREATE FUNCTION "public"."handle_game_created"() RETURNS "trigger"
 AS
 $$
 begin
-
     insert into public.game_participants(game_id, user_id, status)
     select new.id, unnest(new.participants), 'INVITED';
 
@@ -11,8 +10,8 @@ begin
     set status = 'READY'
     where game_id = new.id and user_id = new.created_by and status = 'INVITED';
 
-
-
+    insert into public.game_actions(game_id, user_id, action, metadata)
+    values (new.id, new.created_by, 'CREATED', '{}'::jsonb);
 
     return new;
 end
