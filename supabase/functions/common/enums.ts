@@ -4,7 +4,8 @@ export enum Tables {
     FRIENDS = 'friends',
     PROFILES = 'profiles',
     ADMIN_SETTINGS = 'admin_settings',
-    PURCHASES = 'purchases'
+    PURCHASES = 'purchases',
+    GAMES = 'games'
 }
 
 export enum SupabaseEdgeFunctions {

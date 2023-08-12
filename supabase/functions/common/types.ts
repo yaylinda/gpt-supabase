@@ -1,8 +1,6 @@
 import moment from 'moment';
-import { GPTChatModel, GPTEmbedModel } from './enums.ts';
-import {
-    ChatCompletionRequestMessage, ChatCompletionRole, CustomerInfo, PurchasesStoreProduct,
-} from './externalTypes.ts';
+import {GPTChatModel, GPTEmbedModel} from './enums.ts';
+import {ChatCompletionRequestMessage, ChatCompletionRole,} from './externalTypes.ts';
 
 ///////////////////////////////////////////////////////////
 // chats
