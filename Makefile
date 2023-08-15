@@ -10,7 +10,7 @@ restart:
 	npx supabase stop && npx supabase start
 
 stop:
-	npx supabase stop --no-backup
+	npx supabase stop
 
 new_migration:
 	npx supabase migration new $(name)
